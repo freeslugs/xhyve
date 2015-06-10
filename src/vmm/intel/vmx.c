@@ -504,7 +504,7 @@ vmx_init(void)
 	}
 
 	/* Check support for VM-exit controls */
-	error = vmx_set_ctlreg(HV_VMX_CAP_EXIT,
+	error = vmx_set_ctlreg(HV_VMX_CAP_ENTRY,
 			       VM_EXIT_CTLS_ONE_SETTING,
 			       VM_EXIT_CTLS_ZERO_SETTING,
 			       &exit_ctls);
